@@ -1,0 +1,399 @@
+:root {
+  --main-color: #4ba87d;
+}
+body {
+  font-family: "Raleway", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+.card {
+  --bs-card-border-width: 0;
+  --bs-card-border-radius: 0;
+  .card-img {
+    border-radius: 0;
+  }
+}
+
+/* ---------------------------------------- */
+
+.main-nav {
+  .main-logo {
+    width: 135%;
+  }
+  li a {
+    text-decoration: none;
+    border-bottom: var(--main-color) solid 4px;
+    color: black;
+    &:hover {
+      color: white;
+      background: var(--main-color);
+      border-top: var(--main-color) solid 4px;
+    }
+  }
+  a.active {
+    color: white;
+    background: var(--main-color);
+    border-top: var(--main-color) solid 4px;
+  }
+   @media screen and (max-width: 576px) {
+   .main-logo {
+    width: 100%;
+  }
+  }
+}
+/* ---------------------------------------- */
+
+.main-header {
+  background: url(/img/bg1.png) no-repeat center center;
+  background-size: cover;
+  padding-block: 35px;
+
+  .card {
+    width: 46%;
+    height: auto;
+    --bs-card-bg: transparent;
+  }
+  .card-title {
+    font-family: "Playfair Display", serif;
+  }
+  .button {
+    border: var(--main-color) solid 3px;
+    border-radius: 0%;
+    color: var(--main-color);
+    background: white;
+    font-weight: 900;
+    &:hover {
+      background: #4ba87d;
+      color: white;
+    }
+  }
+  .card-active {
+    background: #4ba87d;
+    color: white;
+  }
+  .img-box {
+    width: 66%;
+    height: auto;
+    margin-left: -14%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  
+  @media screen and (max-width: 1400px) {
+      .img-box{
+        width: 60%;
+        margin-left: -14%;
+      }
+       .display-4{
+       font-size: 3.5rem;
+    }
+    .card {
+    width: 50%;
+  }
+   }
+
+  @media screen and (max-width: 1200px) {
+      .card {
+      width: 65%;
+    }
+    .display-4{
+       font-size: 2.8rem;
+    }
+    .fs-4{
+      font-size: 1.4rem !important;
+    }
+   
+    .img-box{
+        width: 90%;
+      }
+   }
+    @media screen and (max-width: 992px) {
+    position: relative;
+    background-image: none;
+    height: 370px;
+    .card {
+      width: 50%;
+      z-index: 1;
+    }
+    .display-4{
+       font-size: 2rem;
+       text-shadow: 0 0 6px rgba(0, 0, 0, 0.242);
+    }
+    .fs-4{
+      font-size: 1.2rem !important;
+    }
+    h5{
+      margin-bottom: calc(55px+30%);
+    }
+    .img-box{
+      width: 550px;
+      margin: 0;
+      position: absolute;
+      top: 55px;
+      right: 15%
+    }
+
+    }
+    @media screen and (max-width: 768px) {
+    position: relative;
+    background-image: none;
+    height: 370px;
+    .card {
+      width: 60%;
+      z-index: 1;
+    }
+    .display-4{
+       font-size: 2rem;
+       text-shadow: 0 0 6px rgba(0, 0, 0, 0.242);
+    }
+    .fs-4{
+      font-size: 1.2rem !important;
+    }
+    h5{
+      margin-bottom: calc(55px+30%);
+    }
+    .img-box{
+      width: 70%;
+      margin: 0;
+      position: absolute;
+      top: 55px;
+      right: 40px
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    position: relative;
+    background-image: none;
+    .card {
+      
+      width: 100%;
+      z-index: 1;
+    }
+    .display-4{
+       font-size: 2.4rem;
+       text-shadow: 0 0 6px rgba(0, 0, 0, 0.242);
+    }
+    .fs-4{
+      font-size: 1rem !important;
+    }
+    h5{
+      margin-bottom: calc(55px+30%);
+      width: 81%;
+    }
+    .img-box{
+      width: 94%;
+      margin: 0;
+      position: absolute;
+      top: 66px;
+      left: 10px;
+    }
+  }
+}
+
+/* ---------------------------------------- */
+
+.main {
+  background: url(/img/bg.png) no-repeat;
+  background-size: cover;
+}
+.button {
+  font-weight: 900;
+  border-radius: 0%;
+}
+.section-title {
+  font-family: "Playfair Display", serif;
+}
+section {
+  padding-block: 50px;
+   @media screen and (max-width: 1200px) {
+    padding-block: 30px;
+   }
+    @media screen and (max-width: 768px) {
+       padding-block: 15px;
+    }
+  @media screen and (max-width: 576px) {
+    padding: 0px;
+  }
+}
+.bg-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.126);
+  z-index: 1;
+}
+
+
+/* ---------------------------------------- */
+.section1-bg {
+  color: white;
+  background: url(/img/main-img.png);
+  background-size: cover;
+  .button {
+    color: var(--main-color);
+    background: white;
+    &:hover {
+      color: white;
+      background: var(--main-color);
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    .display-4{
+       font-size: 2.5rem;
+    }
+   }
+  @media screen and (max-width: 576px) {
+    .display-4{
+      font-size: 2rem;
+    }
+    
+  }
+}
+
+.section2 {
+  a {
+    color: var(--main-color);
+    text-decoration: none;
+    font-weight: 700;
+  }
+  @media screen and (max-width: 1200px) {
+    .display-5{
+       font-size: 2.5rem;
+    }
+   }
+   @media screen and (max-width: 768px) {
+    .display-5{
+       font-size: 2rem;
+   }
+    p{
+      font-size: 0.8rem;
+    }
+    .fs-5{
+      font-size: 1rem !important;
+    }
+  }
+    @media screen and (max-width: 576px){
+     .display-5{
+      font-size: 2.3rem;
+     }
+    
+    }
+}
+
+.section3 {
+  h5 {
+    font-weight: 900;
+  }
+  @media screen and (max-width: 768px) {
+    .fs-1{
+      font-size: 1.2rem !important;
+    }
+    .fs-5{
+      font-size: 0.8rem !important;
+    }
+  }
+}
+.section4 {
+  .button {
+    background: var(--main-color);
+    color: white;
+    &:hover {
+      border: var(--main-color) solid 3px;
+      background: white;
+      color: var(--main-color);
+    }
+  }
+  a {
+    color: var(--main-color);
+  }
+  @media screen and (max-width: 1200px) {
+    .display-5{
+       font-size: 2.5rem;
+    }
+   }
+   @media screen and (max-width: 768px) {
+    .display-5{
+       font-size: 2.3rem;
+    padding-bottom: 10px;
+  }
+   }
+  
+}
+.section5{
+  @media screen and (max-width: 1200px) {
+    .display-5{
+       font-size: 2.5rem;
+    }
+   }
+   @media screen and (max-width:992px) and (min-width:768px){
+    img{
+      width: 100%;
+    }
+    .icon-2{
+        height: 70%;
+        width: 70%;
+      }
+   }
+          
+   @media screen and (max-width: 768px){
+     .display-5{
+      font-size: 2.3rem;
+     padding-bottom: 10px;
+     }
+    }
+  
+}
+
+
+.section6 {
+  height: 370px;
+  background: var(--main-color);
+  .button {
+    color: var(--main-color);
+    background: white;
+    &:hover {
+      color: white;
+      background: var(--main-color);
+      border: white solid 3px;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    height: 310px;
+     .display-4{
+      font-size: 3rem;
+    
+     }
+   }
+   @media screen and (max-width: 768px){
+    height: 280px;
+     .display-4{
+      font-size: 3rem;
+     
+     }
+    
+    }
+   @media screen and (max-width: 576px){
+    height: 320px;
+     .display-4{
+      font-size: 3.5rem;
+      text-align: center;
+     }
+    
+    }
+}
+
+/* ---------------------------------------- */
+footer {
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  @media screen and (max-width: 768px){
+    .ninja-img{
+      width: 180%;
+    }
+    
+    }
+}
